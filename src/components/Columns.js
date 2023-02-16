@@ -35,12 +35,8 @@ export default function Columns(props) {
     <div>
       <div>
         {loading ? (
-          <div class="load-row">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+         <div class="spinner">
+         </div>
         ) : (
           columns.map((column) => (
             <div className="col-cnt">

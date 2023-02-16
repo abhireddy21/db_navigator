@@ -48,11 +48,7 @@ export default function Catalogs() {
         {catOpen && 
         <div className="cat-cnt" >
             {loading ? (
-                        <div class="load-row">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                      <div class="spinner">
                       </div> // show loader when loading is true
                     ) : (
                 catalogs.map((catalog) => (

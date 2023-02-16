@@ -61,12 +61,8 @@ export default function Tables(props) {
       </div>
       {tabOpen && (
         <div >
-          {loading?(<div class="load-row">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>):(
+          {loading?( <div class="spinner">
+                 </div>):(
           tables.map((table) => (
             <div key={table} className="table-cnt">
               <div onClick={() => handleColumn(table)}>

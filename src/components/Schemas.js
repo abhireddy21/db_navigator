@@ -33,12 +33,8 @@ export default function Schemas(props) {
 
   return (
     <div>
-      {loading ? (<div class="load-row">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>):(
+      {loading ? ( <div class="spinner">
+                 </div>):(
       <div>
       
         {schemas.map((schema) => (

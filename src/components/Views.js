@@ -59,12 +59,8 @@ export default function Views(props) {
       </div>
       {viewOpen && (
         <div>
-          {loading ? (<div class="load-row">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>):(
+          {loading ? ( <div class="spinner">
+                 </div>):(
           views.map((view)=>(
             <div key={view} className="view-cnt">
               <div onClick={() => handleColumn(view)}>
