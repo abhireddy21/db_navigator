@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home-cnt{
+    width: 100%;
+     height: 90vh;
+     position: relative;
+}
+.back-video{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+     position: absolute; 
+     top: 0;
+     left: 0; 
+     z-index: -1;
+}
+.home-content{
+    width: fit-content;
+    height: max-content;
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    backdrop-filter: blur(2px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 25px;
+    position: absolute;
+     top: 50%; 
+     left: 50%;
+     transform: translate(-50%, -50%); 
+     z-index: 1;
+     text-align: center; 
+     color: #fff; 
+     text-shadow: 2px 2px 5px black;
+     font-family: 'Tourney', cursive;
+
+}
+.home-btn{
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color:  #4BB543;
+    color: #fff;
+}
+.home-btn:hover{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color:  #1a4d17;
+    color: #fff;
+}

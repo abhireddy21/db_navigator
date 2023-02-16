@@ -1,0 +1,40 @@
+.load-row {
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+  
+  .load-row span {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #FFFBF5;
+    border-radius: 25px;
+    animation: up-down6 0.5s ease-in infinite alternate;
+  }
+  
+  .load-row span:nth-child(2) {
+    background: #F7EFE5;
+    animation-delay: 0.16s;
+  }
+  
+  .load-row span:nth-child(3) {
+    background: #C3ACD0;
+    animation-delay: 0.32s;
+  }
+  
+  .load-row span:nth-child(4) {
+    background: #674188;
+    animation-delay: 0.48s;
+  }
+  
+  @keyframes up-down6 {
+    0% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(10px);
+    }
+  }
