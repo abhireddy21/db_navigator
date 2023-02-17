@@ -23,7 +23,7 @@ export default function Connection() {
     event.preventDefault();
     setLoading(true);
     axios
-      .post("http://192.168.0.159:8080/dextrus/connect", data)
+      .post("http://192.168.0.158:8080/dextrus/connect", data)
       .then((response) => {
         console.log(response.data);
         navigate("/server", { state: data });

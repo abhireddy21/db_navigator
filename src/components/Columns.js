@@ -14,7 +14,7 @@ export default function Columns(props) {
   if (columns.length === 0) {
     axios
       .post(
-        "http://192.168.0.159:8080/dextrus/" +
+        "http://192.168.0.158:8080/dextrus/" +
           catalog +
           "/" +
           schema +

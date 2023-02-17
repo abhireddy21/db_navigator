@@ -3,12 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
-.rdt-main-cnt, .dex-main-cnt{
-
+.main-cnt{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
 }
-.dex-video-cnt, .rdt-video-cnt{
-
+.video-cnt video{
+    width: 80%;
+    height: 80%;
+    margin-left: 30px;
 }
-.dex-info-cnt, .rdt-info-cnt{
-    
+.info-cnt{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+ .info-cnt h1{
+    font-family: 'Orbitron', sans-serif;
+}
+ .info-cnt p{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-family: 'Roboto Mono', monospace;
+
 }
