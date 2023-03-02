@@ -22,7 +22,7 @@ export default function Tables(props) {
     setTabOpen(!tabOpen);
     if(tables.length===0){
     axios
-      .post("http://192.168.0.158:8080/dextrus/" + catalog + "/" + schema, reqBody)
+      .post("http://192.168.0.104:8080/dextrus/" + catalog + "/" + schema, reqBody)
       .then((response) => {
         if(response.data.length !==0){
         setTables(

@@ -15,7 +15,7 @@ export default function Schemas(props) {
 
   if (schemas.length === 0) {
     axios
-      .post("http://192.168.0.158:8080/dextrus/" + catalog, reqBody)
+      .post("http://192.168.0.104:8080/dextrus/" + catalog, reqBody)
       .then((response) => {
         setSchemas(response.data);
         console.log(response.data);

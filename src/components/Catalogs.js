@@ -21,7 +21,7 @@ export default function Catalogs() {
     setCatOpen(!catOpen)
     if (catalogs.length === 0) {
         axios
-          .post("http://192.168.0.158:8080/dextrus/", reqBody)
+          .post("http://192.168.0.104:8080/dextrus/", reqBody)
           .then((response) => {
             setCatalogs(response.data);
             console.log(response.data);
